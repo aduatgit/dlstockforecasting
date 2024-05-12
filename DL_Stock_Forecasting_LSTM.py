@@ -94,13 +94,13 @@ def main():
             model = Sequential([
             layers.InputLayer((training_variables,1)),
             layers.LSTM(64),
-            layers.Dense((64)),
-            layers.Dense((32)),
+            layers.Dense(64),
+            layers.Dense(32),
             #layers.Dropout((0.9)),
             #layers.Dense((64)),
             #layers.Conv1D((1),(1)),
             #layers.Dense((32)),
-            layers.Dense((1))
+            layers.Dense(1)
                         ])
 
             # model = Sequential()
