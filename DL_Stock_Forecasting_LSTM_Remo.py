@@ -17,7 +17,6 @@ from sklearn.preprocessing import MinMaxScaler
 def main():
     _start_time = time.time()
 
-    # MODEL MIT 7 INPUTS: MIT 7 TAGEN LAG, MIT 6 TAGEN LAG usw. ... , MIT 1 TAG LAG
     ticker = ["JNJ"]
 
     # HYPERPARAMETERS
@@ -248,7 +247,7 @@ def main():
 
 
 if __name__ == "__main__":
-    # with tf.device("/GPU:0"):
-    #     main()
-    with tf.device("/CPU:0"):
+    with tf.device("/GPU:0"):
         main()
+    # with tf.device("/CPU:0"):
+    #     main()
